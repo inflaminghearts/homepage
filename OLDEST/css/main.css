@@ -1,0 +1,22 @@
+/* Navigation Menu */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li a {
+    display: block;
+    width: 60px;
+}
+
+p {
+    /*color: green;*/
+}
+
+.background {
+    background-color: rgb(15, 8, 60);
+    color: aqua;
+    /*padding-top: 64px;*/
+}
+    
