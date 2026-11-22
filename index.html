@@ -4,12 +4,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- TODO(conteúdo): título e descrição para buscadores e compartilhamento -->
-  <title>Inflaming Hearts</title>
-  <meta name="description" content="">
+  <title>Inflaming Hearts | Jogos, software e formação</title>
+  <meta name="description" content="Criatividade de estúdio, rigor de engenharia. Jogos autorais, desenvolvimento de software e formação em tecnologia.">
 
-  <!-- TODO(conteúdo): favicon simplificado (assets/icons/) -->
-  <!-- <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml"> -->
+  <!-- Ícones provisórios, recortados da imagem da marca.
+       TODO: substituir por uma versão simplificada em SVG. -->
+  <link rel="icon" href="assets/icons/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
 
   <!-- Fontes: Cinzel (títulos) + Inter (texto) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,14 +25,15 @@
   <header class="site-header">
     <div class="container site-header__inner">
       <a class="site-header__brand" href="#inicio">
-        <!-- TODO(conteúdo): logo (assets/img/) -->
+        <img src="assets/img/simbolo-96.png" alt="" width="36" height="36">
         Inflaming Hearts
       </a>
 
       <nav class="site-nav" aria-label="Navegação principal">
         <ul>
-          <li><a href="#pilares">Pilares</a></li>
-          <li><a href="#sobre">Sobre</a></li>
+          <!-- TODO: reativar quando as seções tiverem conteúdo -->
+          <!-- <li><a href="#pilares">Pilares</a></li> -->
+          <!-- <li><a href="#sobre">Sobre</a></li> -->
           <li><a href="#contato">Contato</a></li>
         </ul>
       </nav>
@@ -41,17 +43,25 @@
   <main>
 
     <!-- ===================== INÍCIO (HERO) ===================== -->
-    <!-- Objetivo: em poucos segundos, dizer quem é a empresa e o que ela faz.
-         TODO(conteúdo): logo em destaque, frase principal, chamada para ação. -->
+    <!-- Objetivo: em poucos segundos, dizer quem é a empresa e o que ela faz. -->
     <section id="inicio" class="section section--hero" aria-label="Início">
-      <div class="container">
+      <div class="container hero">
+        <h1 class="hero__logo">
+          <img src="assets/img/logo-inflaming-hearts.webp"
+               alt="Inflaming Hearts"
+               width="770" height="676">
+        </h1>
+        <p class="hero__titulo">Criatividade de estúdio, rigor de engenharia.</p>
+        <p class="hero__apoio">Jogos autorais, desenvolvimento de software e formação em tecnologia.</p>
+        <a class="botao" href="#contato">Fale com a gente</a>
       </div>
     </section>
 
     <!-- ===================== PILARES ===================== -->
     <!-- Objetivo: apresentar as três frentes da empresa, cada uma com
          um texto curto e um link para saber mais / entrar em contato. -->
-    <section id="pilares" class="section" aria-labelledby="pilares-titulo">
+    <!-- "hidden": seção oculta até ter conteúdo real (regra do CLAUDE.md) -->
+    <section id="pilares" class="section" aria-labelledby="pilares-titulo" hidden>
       <div class="container">
         <!-- TODO(conteúdo): título da seção (id="pilares-titulo") -->
 
@@ -79,7 +89,8 @@
     <!-- ===================== SOBRE ===================== -->
     <!-- Objetivo: propósito da empresa e trajetória do fundador.
          Base: texto de propósito do site antigo (branch 'legado', OLDEST/index.html). -->
-    <section id="sobre" class="section" aria-labelledby="sobre-titulo">
+    <!-- "hidden": seção oculta até ter conteúdo real (regra do CLAUDE.md) -->
+    <section id="sobre" class="section" aria-labelledby="sobre-titulo" hidden>
       <div class="container">
         <!-- TODO(conteúdo): título (id="sobre-titulo"), texto, foto -->
       </div>
