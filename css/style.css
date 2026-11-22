@@ -351,6 +351,142 @@ img {
   object-fit: cover;
 }
 
+/* Página de imprensa */
+.section--compacta {
+  padding: var(--espaco-6) 0 0;
+}
+
+.imprensa {
+  padding-bottom: var(--espaco-6);
+}
+
+.imprensa__titulo {
+  font-size: clamp(2rem, 5vw, 2.75rem);
+}
+
+.imprensa__lead {
+  font-size: 1.125rem;
+  max-width: 44rem;
+}
+
+.imprensa__indice {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--espaco-1) var(--espaco-3);
+  margin-top: var(--espaco-3);
+  font-size: 0.9375rem;
+}
+
+.imprensa__texto > * {
+  max-width: 52rem;
+}
+
+.imprensa h3 {
+  margin-top: var(--espaco-4);
+}
+
+/* Ficha técnica: rótulo à esquerda, valor à direita */
+.ficha {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: var(--espaco-1) var(--espaco-4);
+  max-width: 52rem;
+  margin: 0;
+  padding: var(--espaco-4);
+  background: var(--fundo-elevado);
+  border: 1px solid var(--borda);
+  border-radius: var(--raio);
+}
+
+.ficha dt {
+  color: var(--texto-lema);
+  font-weight: 600;
+}
+
+.ficha dd {
+  margin: 0;
+}
+
+/* Tabela */
+.tabela {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9375rem;
+}
+
+.tabela th,
+.tabela td {
+  text-align: left;
+  vertical-align: top;
+  padding: var(--espaco-1) var(--espaco-2);
+  border-bottom: 1px solid var(--borda);
+}
+
+.tabela th {
+  color: var(--texto-destaque);
+}
+
+.tabela td:first-child {
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+
+.selo {
+  display: inline-block;
+  margin-left: var(--espaco-1);
+  padding: 0 var(--espaco-1);
+  border: 1px solid var(--texto-destaque);
+  border-radius: 4px;
+  color: var(--texto-destaque);
+  font-size: 0.75rem;
+}
+
+.nota {
+  font-size: 0.875rem;
+  opacity: 0.85;
+}
+
+/* Marca */
+.marca__previa img {
+  width: min(320px, 70vw);
+  border-radius: var(--raio);
+}
+
+.downloads {
+  padding-left: var(--espaco-3);
+}
+
+.downloads li::marker {
+  color: var(--texto-destaque);
+}
+
+.paleta {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr));
+  gap: var(--espaco-2);
+  list-style: none;
+  padding: 0;
+}
+
+.paleta li {
+  display: flex;
+  align-items: center;
+  gap: var(--espaco-1);
+}
+
+.paleta__amostra {
+  width: 2rem;
+  height: 2rem;
+  flex-shrink: 0;
+  border-radius: 6px;
+  border: 1px solid var(--texto);
+  background: var(--amostra);
+}
+
+.fonte-titulo {
+  font-family: var(--fonte-titulo);
+}
+
 /* Rodapé */
 .site-footer {
   border-top: 1px solid var(--borda);
@@ -361,6 +497,10 @@ img {
 
 .site-footer p {
   margin: 0.25rem 0;
+}
+
+.site-footer a {
+  color: var(--texto-destaque);
 }
 
 
@@ -395,5 +535,16 @@ img {
   .site-nav ul {
     gap: var(--espaco-2);
     font-size: 0.875rem;
+  }
+}
+
+/* Telas pequenas: ficha técnica em uma coluna */
+@media (max-width: 600px) {
+  .ficha {
+    grid-template-columns: 1fr;
+  }
+
+  .ficha dd {
+    margin-bottom: var(--espaco-1);
   }
 }

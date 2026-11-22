@@ -7,13 +7,20 @@ Site institucional da Inflaming Hearts: jogos autorais, outsourcing e formação
 ```
 homepage/
 ├── index.html        Site em português: Início, O que fazemos, Sobre, Contato
+├── imprensa/
+│   └── index.html    Imprensa e editais (ficha técnica, CNAEs, marca)
 ├── en/
-│   └── index.html    Versão em inglês, enxuta (jogos e co-dev)
+│   ├── index.html    Versão em inglês, enxuta (jogos e co-dev)
+│   └── press/
+│       └── index.html  Press kit em inglês
 ├── css/
 │   └── style.css     Estilos (variáveis de cor e fonte no topo)
 ├── assets/
 │   ├── img/          Logo, fotos e imagens do site
-│   └── icons/        Favicon e ícones
+│   ├── icons/        Favicon e ícones
+│   └── press/        Arquivos de marca para download
+├── js/
+│   └── ano.js        Ano automático no rodapé
 ├── CLAUDE.md         Regras do projeto (lidas pelo Claude)
 └── .nojekyll         Faz o GitHub Pages publicar os arquivos como estão
 ```
