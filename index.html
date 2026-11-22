@@ -31,8 +31,8 @@
 
       <nav class="site-nav" aria-label="Navegação principal">
         <ul>
-          <!-- TODO: reativar quando as seções tiverem conteúdo -->
-          <!-- <li><a href="#pilares">Pilares</a></li> -->
+          <li><a href="#pilares">O que fazemos</a></li>
+          <!-- TODO: reativar quando a seção tiver conteúdo -->
           <!-- <li><a href="#sobre">Sobre</a></li> -->
           <li><a href="#contato">Contato</a></li>
         </ul>
@@ -58,31 +58,60 @@
     </section>
 
     <!-- ===================== PILARES ===================== -->
-    <!-- Objetivo: apresentar as três frentes da empresa, cada uma com
-         um texto curto e um link para saber mais / entrar em contato. -->
-    <!-- "hidden": seção oculta até ter conteúdo real (regra do CLAUDE.md) -->
-    <section id="pilares" class="section" aria-labelledby="pilares-titulo" hidden>
+    <!-- Objetivo: apresentar as três frentes da empresa e o destaque
+         de coprodução em editais públicos. -->
+    <section id="pilares" class="section" aria-labelledby="pilares-titulo">
       <div class="container">
-        <!-- TODO(conteúdo): título da seção (id="pilares-titulo") -->
+        <h2 id="pilares-titulo" class="section__titulo">O que fazemos</h2>
 
         <div class="pilares">
 
-          <!-- Pilar 1: Jogos Autorais (CNAE: software não customizável, produção audiovisual/música) -->
+          <!-- Pilar 1: Jogos Autorais -->
           <article id="jogos" class="pilar">
-            <!-- TODO(conteúdo): ícone, título, descrição, link -->
+            <svg class="pilar__icone" viewBox="0 0 24 24" aria-hidden="true">
+              <rect x="2" y="7" width="20" height="11" rx="5"/>
+              <path d="M7 10.5v4M5 12.5h4"/>
+              <circle cx="16" cy="11.5" r="1"/>
+              <circle cx="18" cy="13.5" r="1"/>
+            </svg>
+            <h3>Jogos Autorais</h3>
+            <p class="pilar__lema">Histórias que emocionam. Experiências que ficam.</p>
+            <p>Criamos jogos próprios e realizamos eventos culturais: encontros, feiras e, principalmente, <strong>game jams</strong>.</p>
           </article>
 
-          <!-- Pilar 2: Outsourcing (CNAE: software sob encomenda, web design, consultoria, suporte) -->
+          <!-- Pilar 2: Outsourcing -->
           <article id="outsourcing" class="pilar">
-            <!-- TODO(conteúdo): ícone, título, descrição, link -->
+            <svg class="pilar__icone" viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="8" cy="8" r="3"/>
+              <circle cx="16" cy="8" r="3"/>
+              <path d="M2 20c0-3.3 2.7-6 6-6s6 2.7 6 6M10 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/>
+            </svg>
+            <h3>Outsourcing</h3>
+            <p class="pilar__lema">Parcerias que constroem. Qualidade que entrega.</p>
+            <p>Desenvolvemos software sob medida para empresas e estúdios parceiros.</p>
           </article>
 
-          <!-- Pilar 3: Formação (CNAE: outras atividades de ensino) -->
+          <!-- Pilar 3: Formação -->
           <article id="formacao" class="pilar">
-            <!-- TODO(conteúdo): ícone, título, descrição, link -->
+            <svg class="pilar__icone" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M2 9l10-5 10 5-10 5z"/>
+              <path d="M6 11v5c0 1.7 2.7 3 6 3s6-1.3 6-3v-5M22 9v6"/>
+            </svg>
+            <h3>Formação</h3>
+            <p class="pilar__lema">Conhecimento que capacita. Mentorias que transformam.</p>
+            <p>Oferecemos <strong>oficinas e mentorias</strong> em tecnologia e desenvolvimento de jogos, e damos aulas em projetos e instituições parceiras.</p>
           </article>
 
         </div>
+
+        <!-- Destaque: coprodução em editais públicos -->
+        <aside id="editais" class="destaque" aria-labelledby="editais-titulo">
+          <h3 id="editais-titulo">Coprodução em editais públicos</h3>
+          <p>Tem um projeto de jogo e quer inscrevê-lo em um edital de cultura ou inovação?
+             A Inflaming Hearts atua como coprodutora: da estruturação
+             da proposta e do documento de game design até a produção.</p>
+          <a class="botao" href="#contato">Vamos conversar</a>
+        </aside>
       </div>
     </section>
 

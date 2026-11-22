@@ -24,6 +24,8 @@
   --fundo:          var(--cor-fundo);
   --fundo-elevado:  #22282F;
   --fundo-profundo: #020608;  /* mesmo tom do fundo da imagem da logo */
+  --fundo-destaque: linear-gradient(135deg, var(--cor-azul-profundo), var(--cor-verde-escuro));
+  --texto-lema:     var(--cor-turquesa-clara);
   --texto:          var(--cor-branco);
   --texto-destaque: var(--cor-turquesa);
   --borda:          var(--cor-verde-escuro);
@@ -102,7 +104,7 @@ img {
 }
 
 .section--hero {
-  min-height: 70vh;
+  min-height: min(70vh, 760px);
   display: flex;
   align-items: center;
   /* Escurece o centro para a imagem da logo se fundir ao fundo */
@@ -205,11 +207,79 @@ img {
   gap: var(--espaco-4);
 }
 
+.section__titulo {
+  text-align: center;
+  margin-bottom: var(--espaco-6);
+}
+
 .pilar {
   background: var(--fundo-elevado);
   border: 1px solid var(--borda);
   border-radius: var(--raio);
   padding: var(--espaco-4);
+}
+
+.pilar__icone {
+  width: 40px;
+  height: 40px;
+  margin-bottom: var(--espaco-2);
+  fill: none;
+  stroke: var(--texto-destaque);
+  stroke-width: 1.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.pilar h3 {
+  font-size: 1.375rem;
+  margin-bottom: var(--espaco-1);
+}
+
+.pilar__lema {
+  color: var(--texto-lema);
+  font-style: italic;
+  margin-top: 0;
+}
+
+.pilar p:last-child {
+  margin-bottom: 0;
+}
+
+.pilar strong {
+  color: var(--texto-destaque);
+  font-weight: 600;
+}
+
+/* Destaque (editais) */
+.destaque {
+  margin-top: var(--espaco-6);
+  padding: var(--espaco-6) var(--espaco-4);
+  text-align: center;
+  background: var(--fundo-destaque);
+  border: 1px solid var(--texto-destaque);
+  border-radius: var(--raio);
+}
+
+.destaque h3 {
+  color: var(--texto);
+  font-size: 1.5rem;
+}
+
+.destaque p {
+  max-width: 40rem;
+  margin: 0 auto var(--espaco-4);
+}
+
+/* Sobre o fundo verde, o botão usa branco para manter o contraste */
+.destaque .botao {
+  color: var(--texto);
+  border-color: var(--texto);
+}
+
+.destaque .botao:hover,
+.destaque .botao:focus-visible {
+  background: var(--texto);
+  color: var(--fundo);
 }
 
 /* Botão (link com aparência de botão) */
