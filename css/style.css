@@ -241,13 +241,8 @@ img {
   margin-top: 0;
 }
 
-.pilar__lista {
-  margin: var(--espaco-2) 0 0;
-  padding-left: var(--espaco-3);
-}
-
-.pilar__lista li::marker {
-  color: var(--texto-destaque);
+.pilar p:last-child {
+  margin-bottom: 0;
 }
 
 /* Destaque (editais) */
