@@ -193,6 +193,7 @@ img {
 .site-nav a {
   color: var(--texto);
   text-decoration: none;
+  white-space: nowrap;
 }
 
 .site-nav a:hover,
@@ -200,11 +201,27 @@ img {
   color: var(--texto-destaque);
 }
 
+/* Botão de idioma (PT / EN) */
+.site-nav__idioma {
+  padding: 0.125rem var(--espaco-1);
+  border: 1px solid var(--borda);
+  border-radius: 4px;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
 /* Pilares */
 .pilares {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: var(--espaco-4);
+}
+
+/* Variante com dois pilares (versão em inglês) */
+.pilares--dois {
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 52rem;
+  margin: 0 auto;
 }
 
 .section__titulo {
@@ -366,5 +383,17 @@ img {
   .sobre__foto {
     width: 160px;
     height: 160px;
+  }
+}
+
+/* Telas pequenas: o cabeçalho mostra só o símbolo, para o menu caber */
+@media (max-width: 600px) {
+  .site-header__nome {
+    display: none;
+  }
+
+  .site-nav ul {
+    gap: var(--espaco-2);
+    font-size: 0.875rem;
   }
 }
