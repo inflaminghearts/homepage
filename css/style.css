@@ -245,6 +245,11 @@ img {
   margin-bottom: 0;
 }
 
+.pilar strong {
+  color: var(--texto-destaque);
+  font-weight: 600;
+}
+
 /* Destaque (editais) */
 .destaque {
   margin-top: var(--espaco-6);
