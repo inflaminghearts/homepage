@@ -1,0 +1,30 @@
+# =========================================================
+# .gitattributes — como o Git trata cada tipo de arquivo
+# =========================================================
+
+# Padrão: o Git detecta arquivos de texto e salva sempre com
+# final de linha LF (padrão Linux/macOS e da web), inclusive no Windows.
+# Evita que o mesmo arquivo pareça "modificado" só por causa de CRLF.
+* text=auto eol=lf
+
+# ---------- Texto (forçado como texto, com LF) ----------
+*.html  text eol=lf
+*.css   text eol=lf
+*.js    text eol=lf
+*.json  text eol=lf
+*.md    text eol=lf
+*.svg   text eol=lf
+*.txt   text eol=lf
+
+# ---------- Binários (nunca converter nem comparar como texto) ----------
+*.png   binary
+*.jpg   binary
+*.jpeg  binary
+*.gif   binary
+*.webp  binary
+*.ico   binary
+*.pdf   binary
+*.woff  binary
+*.woff2 binary
+*.ttf   binary
+*.otf   binary
