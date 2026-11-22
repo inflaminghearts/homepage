@@ -16,6 +16,9 @@ Publicado via GitHub Pages.
 - Nome da empresa: sempre "Inflaming Hearts" (sem ponto).
 - Pilares: Jogos Autorais, Outsourcing, Formação.
 - Contato público: apenas o Instagram @inflaming.hearts. Não publicar telefone.
+- Links externos: Instagram da empresa (Contato) e itch.io pessoal do Narto (Sobre). Nenhuma outra rede por enquanto.
+- Narto Junior é servidor público: nunca descrevê-lo como administrador, gestor, diretor
+  ou "à frente" da empresa. A empresa é apresentada como a visão dele sobre o desenvolvimento de jogos.
 
 ## Acessibilidade
 - Texto sobre o fundo `#1B1F24`: usar apenas branco, turquesa, turquesa clara ou verde-água.
