@@ -305,11 +305,45 @@ img {
   text-align: center;
 }
 
+/* Sobre */
+.sobre__proposito {
+  max-width: 44rem;
+  margin: 0 auto var(--espaco-6);
+  text-align: center;
+  font-size: 1.125rem;
+}
+
+.sobre__proposito strong {
+  color: var(--texto-destaque);
+}
+
+.sobre__pessoa {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: var(--espaco-4);
+  align-items: center;
+  max-width: 52rem;
+  margin: 0 auto;
+}
+
+.sobre__foto {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  border: 3px solid var(--texto-destaque);
+  object-fit: cover;
+}
+
 /* Rodapé */
 .site-footer {
   border-top: 1px solid var(--borda);
   padding: var(--espaco-4) 0;
   font-size: 0.875rem;
+  text-align: center;
+}
+
+.site-footer p {
+  margin: 0.25rem 0;
 }
 
 
@@ -321,5 +355,16 @@ img {
 
   .site-nav ul {
     gap: var(--espaco-2);
+  }
+
+  .sobre__pessoa {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+  }
+
+  .sobre__foto {
+    width: 160px;
+    height: 160px;
   }
 }
