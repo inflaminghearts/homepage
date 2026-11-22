@@ -2,6 +2,8 @@
 
 Site institucional da Inflaming Hearts: jogos autorais, outsourcing e formação.
 
+No ar em **https://inflaminghearts.com.br** (GitHub Pages).
+
 ## Estrutura
 
 ```
@@ -24,6 +26,7 @@ homepage/
 ├── js/
 │   └── ano.js        Ano automático no rodapé
 ├── CLAUDE.md         Regras do projeto (lidas pelo Claude)
+├── CNAME             Domínio próprio do GitHub Pages (não apagar)
 └── .nojekyll         Faz o GitHub Pages publicar os arquivos como estão
 ```
 
