@@ -12,7 +12,10 @@ Publicado via GitHub Pages.
 ## Conteúdo
 - Nenhum texto de exemplo (lorem ipsum, "Em breve", números fictícios) vai para a `main`.
   Seção sem conteúdo real fica de fora ou como comentário `TODO(conteúdo)`.
-- Idioma: português do Brasil.
+- Idiomas: português do Brasil (`index.html`, site completo) e inglês (`en/index.html`, versão enxuta).
+  A versão em inglês fala só de jogos e co-dev, para o público internacional.
+  Outsourcing, Formação e editais ficam só em português.
+  Ao mudar um texto que existe nas duas versões, atualizar as duas.
 - Nome da empresa: sempre "Inflaming Hearts" (sem ponto).
 - Pilares: Jogos Autorais, Outsourcing, Formação.
 - Contato público: apenas o Instagram @inflaming.hearts. Não publicar telefone.

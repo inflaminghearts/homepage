@@ -6,7 +6,9 @@ Site institucional da Inflaming Hearts: jogos autorais, outsourcing e formação
 
 ```
 homepage/
-├── index.html        Página única com as seções: Início, Pilares, Sobre, Contato
+├── index.html        Site em português: Início, O que fazemos, Sobre, Contato
+├── en/
+│   └── index.html    Versão em inglês, enxuta (jogos e co-dev)
 ├── css/
 │   └── style.css     Estilos (variáveis de cor e fonte no topo)
 ├── assets/
