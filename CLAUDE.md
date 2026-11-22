@@ -15,7 +15,7 @@ Publicado via GitHub Pages.
 - Idioma: português do Brasil.
 - Nome da empresa: sempre "Inflaming Hearts" (sem ponto).
 - Pilares: Jogos Autorais, Outsourcing, Formação.
-- Contato público: apenas LinkedIn. Não publicar telefone.
+- Contato público: apenas o Instagram @inflaming.hearts. Não publicar telefone.
 
 ## Acessibilidade
 - Texto sobre o fundo `#1B1F24`: usar apenas branco, turquesa, turquesa clara ou verde-água.

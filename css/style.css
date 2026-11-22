@@ -164,6 +164,29 @@ img {
   padding: var(--espaco-4);
 }
 
+/* Botão (link com aparência de botão) */
+.botao {
+  display: inline-block;
+  padding: var(--espaco-2) var(--espaco-4);
+  border: 1px solid var(--texto-destaque);
+  border-radius: var(--raio);
+  color: var(--texto-destaque);
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.botao:hover,
+.botao:focus-visible {
+  background: var(--texto-destaque);
+  color: var(--fundo);
+}
+
+/* Contato */
+.section--contato {
+  text-align: center;
+}
+
 /* Rodapé */
 .site-footer {
   border-top: 1px solid var(--borda);
