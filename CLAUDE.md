@@ -6,6 +6,7 @@ Publicado via GitHub Pages.
 ## Tecnologia
 - HTML e CSS puros. Sem frameworks, sem etapa de build.
 - JavaScript só se for realmente necessário, em `js/`.
+  Hoje existe só `js/ano.js` (ano do rodapé). O site deve funcionar sem JavaScript.
 - Cores, fontes e espaçamentos ficam em variáveis no topo de `css/style.css`.
   Use as variáveis de papel (`--texto`, `--fundo` etc.), não as cores diretas.
 
