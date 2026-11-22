@@ -6,6 +6,7 @@ Publicado via GitHub Pages.
 ## Tecnologia
 - HTML e CSS puros. Sem frameworks, sem etapa de build.
 - JavaScript só se for realmente necessário, em `js/`.
+  Hoje existe só `js/ano.js` (ano do rodapé). O site deve funcionar sem JavaScript.
 - Cores, fontes e espaçamentos ficam em variáveis no topo de `css/style.css`.
   Use as variáveis de papel (`--texto`, `--fundo` etc.), não as cores diretas.
 
@@ -22,6 +23,20 @@ Publicado via GitHub Pages.
 - Links externos: Instagram da empresa (Contato) e itch.io pessoal do Narto (Sobre). Nenhuma outra rede por enquanto.
 - Narto Junior é servidor público: nunca descrevê-lo como administrador, gestor, diretor
   ou "à frente" da empresa. A empresa é apresentada como a visão dele sobre o desenvolvimento de jogos.
+
+## Imprensa e editais
+- `imprensa/index.html` (português, completa, voltada também a editais) e `en/press/index.html` (inglês, enxuta).
+  O link para elas fica no rodapé de todas as páginas.
+- Estrutura no espírito do modelo presskit(): ficha técnica, descrição, história, atividades (CNAE, só em português),
+  idealização, marca (arquivos, cores, tipografia) e contato.
+- O catálogo de projetos em editais e a lista de eventos estão como `TODO(conteúdo)` na página em português.
+  Só entram projetos e eventos reais.
+- Os arquivos para download ficam em `assets/press/`. Ao trocar a logo, atualizar também o `.zip`.
+
+## Compartilhamento (Open Graph)
+- Cada página tem tags Open Graph e `canonical` com URLs absolutas e a imagem `assets/img/og-image.jpg` (1200×630).
+- Quando o domínio próprio estiver ativo, trocar `https://inflaminghearts.github.io/homepage/` pelo novo endereço
+  em todas as páginas (procurar por `TODO(domínio)`).
 
 ## Acessibilidade
 - Texto sobre o fundo `#1B1F24`: usar apenas branco, turquesa, turquesa clara ou verde-água.
