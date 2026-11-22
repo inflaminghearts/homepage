@@ -23,6 +23,7 @@
   /* Papéis (use estes nos componentes, não as cores diretas) */
   --fundo:          var(--cor-fundo);
   --fundo-elevado:  #22282F;
+  --fundo-profundo: #020608;  /* mesmo tom do fundo da imagem da logo */
   --texto:          var(--cor-branco);
   --texto-destaque: var(--cor-turquesa);
   --borda:          var(--cor-verde-escuro);
@@ -104,6 +105,11 @@ img {
   min-height: 70vh;
   display: flex;
   align-items: center;
+  /* Escurece o centro para a imagem da logo se fundir ao fundo */
+  background: radial-gradient(ellipse at 50% 35%,
+              var(--fundo-profundo) 0%,
+              var(--fundo-profundo) 30%,
+              var(--fundo) 75%);
 }
 
 
@@ -126,9 +132,51 @@ img {
 }
 
 .site-header__brand {
+  display: flex;
+  white-space: nowrap;
+  align-items: center;
+  gap: var(--espaco-1);
   font-family: var(--fonte-titulo);
   font-weight: 700;
   text-decoration: none;
+}
+
+.site-header__brand img {
+  border-radius: 6px;
+}
+
+/* Início (hero) */
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.hero__logo {
+  margin: 0 0 var(--espaco-3);
+}
+
+.hero__logo img {
+  width: min(480px, 90vw);
+  /* Esfuma as bordas da imagem para ela se misturar ao fundo do site */
+  -webkit-mask-image: radial-gradient(ellipse farthest-side at center, #000 72%, transparent 100%);
+          mask-image: radial-gradient(ellipse farthest-side at center, #000 72%, transparent 100%);
+}
+
+.hero__titulo {
+  font-family: var(--fonte-titulo);
+  font-size: clamp(1.5rem, 4vw, 2.25rem);
+  font-weight: 700;
+  color: var(--texto-destaque);
+  line-height: 1.2;
+  margin: 0 0 var(--espaco-2);
+}
+
+.hero__apoio {
+  font-size: 1.125rem;
+  max-width: 36rem;
+  margin: 0 0 var(--espaco-4);
 }
 
 /* Navegação */
