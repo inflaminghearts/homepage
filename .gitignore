@@ -1,9 +1,63 @@
-# Editores e IDEs
+# =========================================================
+# .gitignore — site da Inflaming Hearts
+# Arquivos e pastas que o Git deve ignorar (nunca vão para o GitHub).
+# =========================================================
+
+
+# ---------- Segredos e configurações locais ----------
+# Chaves, senhas e tokens nunca devem ir para um repositório público.
+.env
+.env.*
+*.pem
+*.key
+
+
+# ---------- Editores e IDEs ----------
+# Visual Studio
 .vs/
+*.suo
+*.user
+
+# VS Code
 .vscode/
+
+# JetBrains (WebStorm, Rider etc.)
 .idea/
 
-# Arquivos do sistema
-.DS_Store
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+
+# ---------- Sistema operacional ----------
+# Windows
 Thumbs.db
+ehthumbs.db
 desktop.ini
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+._*
+
+# Linux
+.directory
+
+
+# ---------- Arquivos temporários e de backup ----------
+*.tmp
+*.temp
+*.bak
+*.swp
+*~
+# Arquivos temporários do Office (abertos no momento)
+~$*
+
+
+# ---------- Logs ----------
+*.log
+
+
+# ---------- Ferramentas (caso sejam usadas no futuro) ----------
+# Dependências do Node.js (ex.: formatadores, servidor local)
+node_modules/
