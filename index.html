@@ -32,8 +32,7 @@
       <nav class="site-nav" aria-label="Navegação principal">
         <ul>
           <li><a href="#pilares">O que fazemos</a></li>
-          <!-- TODO: reativar quando a seção tiver conteúdo -->
-          <!-- <li><a href="#sobre">Sobre</a></li> -->
+          <li><a href="#sobre">Sobre</a></li>
           <li><a href="#contato">Contato</a></li>
         </ul>
       </nav>
@@ -116,12 +115,39 @@
     </section>
 
     <!-- ===================== SOBRE ===================== -->
-    <!-- Objetivo: propósito da empresa e trajetória do fundador.
-         Base: texto de propósito do site antigo (branch 'legado', OLDEST/index.html). -->
-    <!-- "hidden": seção oculta até ter conteúdo real (regra do CLAUDE.md) -->
-    <section id="sobre" class="section" aria-labelledby="sobre-titulo" hidden>
-      <div class="container">
-        <!-- TODO(conteúdo): título (id="sobre-titulo"), texto, foto -->
+    <!-- Objetivo: propósito da empresa e quem está por trás dela. -->
+    <section id="sobre" class="section" aria-labelledby="sobre-titulo">
+      <div class="container sobre">
+        <h2 id="sobre-titulo" class="section__titulo">Sobre</h2>
+
+        <p class="sobre__proposito">
+          A Inflaming Hearts nasceu para tornar o desenvolvimento de jogos algo sustentável.
+          Acreditamos no <strong>codesenvolvimento (co-dev)</strong>: pequenos estúdios unindo
+          forças para tirar projetos do papel, sem perder o processo criativo que só um estúdio
+          independente oferece.
+        </p>
+
+        <div class="sobre__pessoa">
+          <!-- Foto provisória (do site antigo). TODO: trocar por uma foto em resolução maior. -->
+          <img class="sobre__foto"
+               src="assets/img/narto-junior.webp"
+               alt="Narto Junior, sentado diante de um notebook, com expressão bem-humorada"
+               width="400" height="400" loading="lazy">
+          <div>
+            <h3>Quem está por trás</h3>
+            <p>
+              À frente da Inflaming Hearts está <strong>Narto Junior</strong>, tecnólogo em Análise
+              e Desenvolvimento de Sistemas pelo IFRN, especialista em Jogos Digitais e estudante
+              de Tecnologia em Produção Cultural, também pelo IFRN.
+            </p>
+            <p>
+              Desde 2015, é cofundador e organizador da PONG – Potiguar Indie Games, comunidade de
+              desenvolvedores de jogos do Rio Grande do Norte, e atua como organizador regional da
+              Global Game Jam. Programador, produtor e game designer, também é professor de
+              tecnologia e desenvolvimento de jogos.
+            </p>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -145,7 +171,8 @@
   <!-- ===================== RODAPÉ ===================== -->
   <footer class="site-footer">
     <div class="container">
-      <!-- TODO(conteúdo): razão social, CNPJ, ano -->
+      <p>© 2026 Inflaming Hearts</p>
+      <p>INFLAMING HEARTS SOFTWARE, ENTRETENIMENTO E EDUCACAO LTDA · CNPJ 48.835.868/0001-38</p>
     </div>
   </footer>
 
