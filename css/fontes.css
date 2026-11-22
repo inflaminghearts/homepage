@@ -1,0 +1,51 @@
+/* =========================================================
+   Fontes hospedadas no próprio site (sem Google Fonts).
+   Assim o navegador do visitante não envia dados ao Google (LGPD).
+
+   Cinzel (títulos) e Inter (texto), ambas sob a SIL Open Font License 1.1.
+   As licenças estão em assets/fonts/*/OFL.txt.
+   Subconjunto "latin": cobre português e inglês (acentos e ç incluídos).
+   Origem dos arquivos: pacotes @fontsource/cinzel e @fontsource/inter (v5.3.0).
+   ========================================================= */
+
+/* Cinzel — títulos */
+@font-face {
+  font-family: "Cinzel";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../assets/fonts/cinzel/cinzel-latin-500-normal.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Cinzel";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../assets/fonts/cinzel/cinzel-latin-700-normal.woff2") format("woff2");
+}
+
+/* Inter — texto */
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../assets/fonts/inter/inter-latin-400-normal.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../assets/fonts/inter/inter-latin-400-italic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("../assets/fonts/inter/inter-latin-600-normal.woff2") format("woff2");
+}

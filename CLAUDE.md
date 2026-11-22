@@ -7,6 +7,9 @@ Publicado via GitHub Pages.
 - HTML e CSS puros. Sem frameworks, sem etapa de build.
 - JavaScript só se for realmente necessário, em `js/`.
   Hoje existe só `js/ano.js` (ano do rodapé). O site deve funcionar sem JavaScript.
+- Fontes hospedadas no próprio site: `css/fontes.css` + arquivos em `assets/fonts/` (Cinzel e Inter, licença OFL,
+  com o `OFL.txt` em cada pasta). Não usar Google Fonts nem outro serviço externo de fontes (privacidade/LGPD).
+  Para um peso novo, copiar o `.woff2` do pacote @fontsource correspondente e declarar em `css/fontes.css`.
 - Cores, fontes e espaçamentos ficam em variáveis no topo de `css/style.css`.
   Use as variáveis de papel (`--texto`, `--fundo` etc.), não as cores diretas.
 
