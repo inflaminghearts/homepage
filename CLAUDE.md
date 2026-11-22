@@ -24,6 +24,11 @@ Publicado via GitHub Pages.
 - Narto Junior é servidor público: nunca descrevê-lo como administrador, gestor, diretor
   ou "à frente" da empresa. A empresa é apresentada como a visão dele sobre o desenvolvimento de jogos.
 
+## Compartilhamento (Open Graph)
+- Cada página tem tags Open Graph e `canonical` com URLs absolutas e a imagem `assets/img/og-image.jpg` (1200×630).
+- Quando o domínio próprio estiver ativo, trocar `https://inflaminghearts.github.io/homepage/` pelo novo endereço
+  em todas as páginas (procurar por `TODO(domínio)`).
+
 ## Acessibilidade
 - Texto sobre o fundo `#1B1F24`: usar apenas branco, turquesa, turquesa clara ou verde-água.
   `#145C4B` e `#0F3B52` são só para fundos e bordas.
