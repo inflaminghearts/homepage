@@ -14,9 +14,11 @@ homepage/
 │   └── press/
 │       └── index.html  Press kit em inglês
 ├── css/
+│   ├── fontes.css    Declaração das fontes locais
 │   └── style.css     Estilos (variáveis de cor e fonte no topo)
 ├── assets/
 │   ├── img/          Logo, fotos e imagens do site
+│   ├── fonts/        Fontes Cinzel e Inter (com licença OFL)
 │   ├── icons/        Favicon e ícones
 │   └── press/        Arquivos de marca para download
 ├── js/
