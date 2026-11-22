@@ -1,0 +1,184 @@
+/* =========================================================
+   Inflaming Hearts — estilos do site
+   Organização:
+     1. Variáveis (cores, fontes, espaçamentos)
+     2. Base (reset e elementos padrão)
+     3. Layout (container e seções)
+     4. Componentes (cabeçalho, navegação, pilares, rodapé)
+     5. Responsividade
+   ========================================================= */
+
+
+/* ---------- 1. Variáveis ---------- */
+:root {
+  /* Paleta da identidade visual */
+  --cor-azul-profundo: #0F3B52;  /* fundos e bordas (não usar para texto) */
+  --cor-verde-escuro:  #145C4B;  /* fundos e bordas (não usar para texto) */
+  --cor-verde-agua:    #1FAE9B;  /* destaques                     — 6,0:1 sobre o fundo */
+  --cor-turquesa:      #3DD6D0;  /* links e títulos               — 9,3:1 sobre o fundo */
+  --cor-turquesa-clara:#8BF2E6;  /* realces                       — 12,6:1 sobre o fundo */
+  --cor-branco:        #F5F7FA;  /* texto principal               — 15,4:1 sobre o fundo */
+  --cor-fundo:         #1B1F24;  /* fundo do site */
+
+  /* Papéis (use estes nos componentes, não as cores diretas) */
+  --fundo:          var(--cor-fundo);
+  --fundo-elevado:  #22282F;
+  --texto:          var(--cor-branco);
+  --texto-destaque: var(--cor-turquesa);
+  --borda:          var(--cor-verde-escuro);
+
+  /* Tipografia */
+  --fonte-titulo: "Cinzel", Georgia, serif;
+  --fonte-texto:  "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+
+  /* Espaçamentos */
+  --espaco-1: 0.5rem;
+  --espaco-2: 1rem;
+  --espaco-3: 1.5rem;
+  --espaco-4: 2rem;
+  --espaco-6: 3rem;
+  --espaco-8: 4rem;
+
+  --largura-max: 1100px;
+  --raio: 8px;
+}
+
+
+/* ---------- 2. Base ---------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--fundo);
+  color: var(--texto);
+  font-family: var(--fonte-texto);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-family: var(--fonte-titulo);
+  color: var(--texto-destaque);
+  line-height: 1.2;
+  margin: 0 0 var(--espaco-2);
+}
+
+a {
+  color: var(--texto-destaque);
+}
+
+a:hover,
+a:focus-visible {
+  color: var(--cor-turquesa-clara);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+/* ---------- 3. Layout ---------- */
+.container {
+  width: 100%;
+  max-width: var(--largura-max);
+  margin: 0 auto;
+  padding: 0 var(--espaco-3);
+}
+
+.section {
+  padding: var(--espaco-8) 0;
+  scroll-margin-top: 4rem; /* compensa o cabeçalho fixo ao clicar no menu */
+}
+
+.section--hero {
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+}
+
+
+/* ---------- 4. Componentes ---------- */
+
+/* Cabeçalho */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: var(--fundo);
+  border-bottom: 1px solid var(--borda);
+}
+
+.site-header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 4rem;
+}
+
+.site-header__brand {
+  font-family: var(--fonte-titulo);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+/* Navegação */
+.site-nav ul {
+  display: flex;
+  gap: var(--espaco-3);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.site-nav a {
+  color: var(--texto);
+  text-decoration: none;
+}
+
+.site-nav a:hover,
+.site-nav a:focus-visible {
+  color: var(--texto-destaque);
+}
+
+/* Pilares */
+.pilares {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--espaco-4);
+}
+
+.pilar {
+  background: var(--fundo-elevado);
+  border: 1px solid var(--borda);
+  border-radius: var(--raio);
+  padding: var(--espaco-4);
+}
+
+/* Rodapé */
+.site-footer {
+  border-top: 1px solid var(--borda);
+  padding: var(--espaco-4) 0;
+  font-size: 0.875rem;
+}
+
+
+/* ---------- 5. Responsividade ---------- */
+@media (max-width: 768px) {
+  .pilares {
+    grid-template-columns: 1fr;
+  }
+
+  .site-nav ul {
+    gap: var(--espaco-2);
+  }
+}

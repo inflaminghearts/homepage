@@ -1,0 +1,29 @@
+# Site da Inflaming Hearts — regras do projeto
+
+Site institucional da INFLAMING HEARTS SOFTWARE, ENTRETENIMENTO E EDUCACAO LTDA.
+Publicado via GitHub Pages.
+
+## Tecnologia
+- HTML e CSS puros. Sem frameworks, sem etapa de build.
+- JavaScript só se for realmente necessário, em `js/`.
+- Cores, fontes e espaçamentos ficam em variáveis no topo de `css/style.css`.
+  Use as variáveis de papel (`--texto`, `--fundo` etc.), não as cores diretas.
+
+## Conteúdo
+- Nenhum texto de exemplo (lorem ipsum, "Em breve", números fictícios) vai para a `main`.
+  Seção sem conteúdo real fica de fora ou como comentário `TODO(conteúdo)`.
+- Idioma: português do Brasil.
+- Nome da empresa: sempre "Inflaming Hearts" (sem ponto).
+- Pilares: Jogos Autorais, Outsourcing, Formação.
+- Contato público: apenas LinkedIn. Não publicar telefone.
+
+## Acessibilidade
+- Texto sobre o fundo `#1B1F24`: usar apenas branco, turquesa, turquesa clara ou verde-água.
+  `#145C4B` e `#0F3B52` são só para fundos e bordas.
+- Toda imagem tem `alt` descritivo e correto.
+
+## Fluxo de trabalho
+- Nunca commitar direto na `main`: uma branch por tarefa e Pull Request para revisão.
+- Mensagens de commit em português, no formato `tipo: descrição`
+  (`feat`, `fix`, `style`, `docs`, `chore`).
+- A versão antiga do repositório está preservada na branch `legado`.
