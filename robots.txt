@@ -1,0 +1,5 @@
+# Todos os buscadores podem indexar o site inteiro.
+User-agent: *
+Allow: /
+
+Sitemap: https://inflaminghearts.com.br/sitemap.xml

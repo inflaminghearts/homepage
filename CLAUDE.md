@@ -41,6 +41,16 @@ Publicado via GitHub Pages em https://inflaminghearts.com.br.
 - Domínio próprio: `https://inflaminghearts.com.br/` (arquivo `CNAME` na raiz, criado pelo GitHub Pages; não apagar).
   As URLs absolutas (Open Graph e canonical) usam esse domínio.
 
+## SEO e descoberta
+- `sitemap.xml` lista todas as páginas com as versões de idioma. **Ao criar uma página nova, adicioná-la ao sitemap**
+  e atualizar o `<lastmod>`. `robots.txt` aponta para o sitemap.
+- `hreflang` sempre com URLs completas, nos dois sentidos, mais `x-default` (versão em português).
+- Dados estruturados (JSON-LD, schema.org `Organization` + `WebSite`) nas páginas iniciais em português e inglês.
+  Se mudar nome, endereço, logo ou redes da empresa, atualizar também ali.
+- Ícones em `assets/icons/` (gerados a partir do avatar), `site.webmanifest` e `meta theme-color` em todas as páginas.
+- `404.html`: página de erro bilíngue, com caminhos absolutos (`/css/...`) e `noindex`.
+- Cada página precisa de `<title>` e `<meta name="description">` próprios e específicos.
+
 ## Acessibilidade
 - Texto sobre o fundo `#1B1F24`: usar apenas branco, turquesa, turquesa clara ou verde-água.
   `#145C4B` e `#0F3B52` são só para fundos e bordas.

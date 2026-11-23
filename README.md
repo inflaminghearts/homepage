@@ -27,6 +27,10 @@ homepage/
 │   └── ano.js        Ano automático no rodapé
 ├── CLAUDE.md         Regras do projeto (lidas pelo Claude)
 ├── CNAME             Domínio próprio do GitHub Pages (não apagar)
+├── 404.html          Página de erro (endereço não encontrado)
+├── robots.txt        Regras para buscadores
+├── sitemap.xml       Mapa do site para buscadores
+├── site.webmanifest  Nome, cores e ícones do site
 └── .nojekyll         Faz o GitHub Pages publicar os arquivos como estão
 ```
 

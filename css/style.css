@@ -317,6 +317,14 @@ img {
   color: var(--fundo);
 }
 
+/* Grupo de botões lado a lado */
+.botoes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--espaco-2);
+}
+
 /* Contato */
 .section--contato {
   text-align: center;
