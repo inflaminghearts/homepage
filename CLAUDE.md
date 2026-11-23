@@ -1,7 +1,7 @@
 # Site da Inflaming Hearts — regras do projeto
 
 Site institucional da INFLAMING HEARTS SOFTWARE, ENTRETENIMENTO E EDUCACAO LTDA.
-Publicado via GitHub Pages.
+Publicado via GitHub Pages em https://inflaminghearts.com.br.
 
 ## Tecnologia
 - HTML e CSS puros. Sem frameworks, sem etapa de build.
@@ -38,8 +38,8 @@ Publicado via GitHub Pages.
 
 ## Compartilhamento (Open Graph)
 - Cada página tem tags Open Graph e `canonical` com URLs absolutas e a imagem `assets/img/og-image.jpg` (1200×630).
-- Quando o domínio próprio estiver ativo, trocar `https://inflaminghearts.github.io/homepage/` pelo novo endereço
-  em todas as páginas (procurar por `TODO(domínio)`).
+- Domínio próprio: `https://inflaminghearts.com.br/` (arquivo `CNAME` na raiz, criado pelo GitHub Pages; não apagar).
+  As URLs absolutas (Open Graph e canonical) usam esse domínio.
 
 ## Acessibilidade
 - Texto sobre o fundo `#1B1F24`: usar apenas branco, turquesa, turquesa clara ou verde-água.
