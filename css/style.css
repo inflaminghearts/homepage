@@ -229,6 +229,18 @@ img {
   margin-bottom: var(--espaco-6);
 }
 
+/* Linha de apoio logo abaixo do título de uma seção */
+.section__apoio {
+  text-align: center;
+  color: var(--texto-lema);
+  font-style: italic;
+  margin: 0 0 var(--espaco-6);
+}
+
+.section__titulo + .section__apoio {
+  margin-top: calc(var(--espaco-2) - var(--espaco-6));
+}
+
 .pilar {
   background: var(--fundo-elevado);
   border: 1px solid var(--borda);
