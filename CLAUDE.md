@@ -21,7 +21,12 @@ Publicado via GitHub Pages em https://inflaminghearts.com.br.
   Outsourcing, Formação e editais ficam só em português.
   Ao mudar um texto que existe nas duas versões, atualizar as duas.
 - Nome da empresa: sempre "Inflaming Hearts" (sem ponto).
-- Pilares: Jogos Autorais, Outsourcing, Formação.
+- Pilares: Jogos Autorais, Outsourcing, Formação. Um pilar não se sobrepõe a outro:
+  - Jogos Autorais: jogos próprios, com tudo o que vem junto (arte, trilha sonora e vídeos do jogo).
+  - Outsourcing: trabalho em jogos e tecnologia para outros estúdios e empresas (codesenvolvimento, sob encomenda, consultoria).
+  - Formação: ensino (oficinas, mentorias, aulas, palestras). Game jams entram aqui só quando forem organizadas
+    pela própria empresa; as da PONG e da Global Game Jam são papel pessoal do Narto.
+  - Coprodução em editais não é pilar: é uma forma de financiar qualquer um dos três e fica como destaque à parte.
 - Contato público: apenas o Instagram @inflaming.hearts. Não publicar telefone.
 - Links externos: Instagram da empresa (Contato) e itch.io pessoal do Narto (Sobre). Nenhuma outra rede por enquanto.
 - Narto Junior é servidor público: nunca descrevê-lo como administrador, gestor, diretor
