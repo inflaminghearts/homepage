@@ -354,6 +354,23 @@ img {
   color: var(--texto-destaque);
 }
 
+.sobre__missao {
+  max-width: 44rem;
+  margin: 0 auto var(--espaco-6);
+  text-align: center;
+}
+
+.sobre__missao h3 {
+  margin-bottom: var(--espaco-2);
+}
+
+.sobre__missao p {
+  color: var(--texto-lema);
+  font-style: italic;
+  font-size: 1.125rem;
+  margin: 0;
+}
+
 .sobre__pessoa {
   display: grid;
   grid-template-columns: 220px 1fr;
