@@ -18,7 +18,8 @@ Publicado via GitHub Pages em https://inflaminghearts.com.br.
   Seção sem conteúdo real fica de fora ou como comentário `TODO(conteúdo)`.
 - Idiomas: português do Brasil (`index.html`, site completo) e inglês (`en/index.html`, versão enxuta).
   A versão em inglês fala só de jogos e co-dev, para o público internacional.
-  Outsourcing, Formação e editais ficam só em português.
+  Outsourcing, Formação e editais ficam só em português: a empresa ainda não atende em inglês.
+  Nos textos em inglês (incluindo a frase principal), não mencionar formação/education nem serviços.
   Ao mudar um texto que existe nas duas versões, atualizar as duas.
 - Nome da empresa: sempre "Inflaming Hearts" (sem ponto).
 - Pilares: Jogos Autorais, Outsourcing, Formação.
