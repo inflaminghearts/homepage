@@ -330,6 +330,11 @@ img {
   text-align: center;
 }
 
+/* Link para a página de imprensa, abaixo do botão do Instagram */
+.contato__imprensa {
+  margin: var(--espaco-4) 0 0;
+}
+
 /* Sobre */
 .sobre__proposito {
   max-width: 44rem;
